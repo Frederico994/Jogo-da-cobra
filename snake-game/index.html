@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Snake Arcade Neon</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- Painel Inicial -->
+  <div id="start-screen">
+    <h1>Snake Arcade</h1>
+    <input type="text" id="nickname" placeholder="Nickname"/>
+    <button id="start-button">Jogar</button>
+    <h2>Top 5 Pontuações</h2>
+    <ul id="scoreboard"></ul>
+  </div>
+
+  <!-- Ecrã de Jogo -->
+  <div id="game-screen" class="hidden">
+    <div id="top-bar">
+      <span id="score">Pontuação: 0</span>
+      <button id="back-button">Voltar</button>
+    </div>
+    <canvas id="game-canvas" width="400" height="400"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
