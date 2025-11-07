@@ -42,7 +42,7 @@ function startGame() {
   spawnFood();
   scoreText.textContent = `Pontuação: ${score}`;
   clearInterval(interval);
-  interval = setInterval(gameLoop, 180); // Cobra mais lenta
+  interval = setInterval(gameLoop, 200); // Cobra mais lenta
 }
 
 function spawnFood() {
@@ -86,7 +86,7 @@ function draw() {
   ctx.fillStyle = "white";
   ctx.fillRect(food.x * 20, food.y * 20, 20, 20);
 }
-/*
+
 function endGame() {
   clearInterval(interval);
   highScores.push({ name: nickname, score });
@@ -95,7 +95,7 @@ function endGame() {
   gameScreen.classList.add("hidden");
   startScreen.classList.remove("hidden");
 }
-*/
+
 async function endGame() {
   clearInterval(interval);
 

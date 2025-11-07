@@ -1,0 +1,12 @@
+{
+  "name": "snake-game",
+  "version": "1.0.0",
+  "description": "Um simples jogo da cobrinha sem dependências",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js"
+  },
+  "keywords": ["snake", "game", "javascript"],
+  "author": "",
+  "license": "ISC"
+}
